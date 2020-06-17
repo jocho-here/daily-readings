@@ -9,7 +9,7 @@
 - Nginx and Apache are at the most front side of backend, dealing directly with user requests.  The main use of those load balancers is to balance out requests to running servers.
 - WSGI (Web Server Gateway Interface) is Python specification of what load balancers do.  There are web application frameworks/ libraries that implemented using WSGI protocol, such as Werkzeug, which Flask is a wrapper of.
 - ASGI stands for Asynchronous Server Gateway Interface, which is async version of WSGI.
-- Uvicorn uses ASGI specification for interacting with an application.  It runs asynchronous Pytho nweb code in a single process.
+- Uvicorn uses ASGI specification for interacting with an application.  It runs asynchronous Python web code in a single process.
 - Gunicorn is a Python WSGI HTTP server for UNIX.  If used with Uvicorn, it manages Uvicorn and runs multiple of these concurrent processes for concurrency and parallelism.
 - Starlette is a ASGI framework/ toolkit.  FastAPI depends on (wraps) Starlette, just like Flask depending on (wrapping) Werkzeug.
 - So for a consistent and strong web server, I need
