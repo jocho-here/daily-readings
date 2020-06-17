@@ -36,4 +36,3 @@ Source: https://www.digitalocean.com/community/tutorials/understanding-database-
     - Maintain a lookup table that uses a shard key to keep track of which shard holds which data
     - The most flexible solution
     - Could make things slow due to the lookup table processing slow
-- 
