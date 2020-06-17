@@ -1,5 +1,5 @@
 # SQLAlchemy Session related knowledge
-## When to construct, commit, and clost Session
+## When to construct, commit, and close session
 - tldr
     - Keep the lifecycle of the session separate and external from functions and objects that access and/or manipulate DB data
     - Have a clear notion of where transactions begin and end
